@@ -1,5 +1,10 @@
 import { createStore } from 'vuex'
 
+// @ts-ignore
+import users from './modules/users.js'
+//@ts-ignore
+import articles from './modules/article.js'
+
 export default createStore({
   state: {
   },
@@ -8,5 +13,7 @@ export default createStore({
   actions: {
   },
   modules: {
+    users,
+    articles
   }
 })

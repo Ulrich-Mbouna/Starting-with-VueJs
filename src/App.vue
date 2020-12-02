@@ -1,10 +1,23 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+   <NavBar />
+    <router-view/>
+      <Footer />
   </div>
-  <router-view/>
 </template>
+
+<script>
+  import NavBar from './components/NavBar';
+  import Footer from './components/Footer';
+
+  export default {
+    components : {
+      NavBar,
+      Footer
+    },
+    setup() {}
+  }
+</script>
 
 <style>
 #app {
